@@ -1,0 +1,21 @@
+@import 'components/reset'
+@import 'components/grid'
+@import 'components/links'
+@import 'components/header'
+@import 'components/footer'
+body
+    font-family: system-ui
+    text-rendering: optimizeSpeed
+    overflow-x: hidden
+    overflow-y: scroll
+.time
+    font-size: 1.3rem
+    color: #777
+
+label[aria-required="true"]:after
+    color: #e32
+    content: ' *'
+    display: inline
+
+label
+    font-size: 1.8rem

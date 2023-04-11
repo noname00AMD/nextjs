@@ -1,0 +1,49 @@
+{
+  "name": "nextjs_app",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noname00AMD/nextjs-prod.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noname00AMD/nextjs-prod/issues"
+  },
+  "homepage": "https://github.com/noname00AMD/nextjs-prod#readme",
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^36.0.1",
+    "@ckeditor/ckeditor5-react": "^5.1.0",
+    "@lexical/react": "^0.9.1",
+    "@prisma/client": "^4.12.0",
+    "ckeditor5-custom-build": "file:ckeditor5",
+    "fast-xml-parser": "^4.1.3",
+    "gulp": "^4.0.2",
+    "lexical": "^0.9.1",
+    "lru-cache": "^7.12.0",
+    "mariadb": "^3.1.1",
+    "morgan": "^1.10.0",
+    "next": "^12.1.7-canary.48",
+    "nodemon": "^2.0.20",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.53.0",
+    "swiper": "^8.2.4",
+    "ua-parser-js": "^1.0.2",
+    "xml": "^1.0.1",
+    "xml2js": "^0.4.23",
+    "yjs": "^13.5.51"
+  },
+  "devDependencies": {
+    "@types/node": "18.14.1",
+    "@types/react": "^18.0.14",
+    "typescript": "^4.7.4"
+  }
+}
