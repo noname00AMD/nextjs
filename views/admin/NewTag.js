@@ -1,5 +1,6 @@
 import AdminLayout from "../layout/AdminLayout"
 import style from "../sass/NewTag.module.sass"
+import { connect } from "react-redux"
 import { useState, useEffect, useRef } from "react"
 import { textToSlug } from "../../helper"
 export default function NewTag(props) {

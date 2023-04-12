@@ -58,6 +58,7 @@ siteInfo.getAll = async function () {
             data.keyword = parse(allSiteInfo, "keyword")
             data.thumbTypes = parse(allSiteInfo, "thumbTypes")
             data.langSupport = parse(allSiteInfo, "langSupport")
+            data.langDefault = parse(allSiteInfo, "langDefault")
             // console.log(data);
             resolve(data)
         }).catch(e => {

@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from "react"
+import { connect } from "react-redux"
 import style from "../sass/ImgInput.module.sass"
-export default function ImgInput(props) {
+function ImgInput(props) {
+    console.log(props);
     var imgRef = useRef()
     var reviewRef = useRef()
     var dropboxRef = useRef()
@@ -80,3 +82,9 @@ export default function ImgInput(props) {
 
     </>)
 }
+const mapStateToProps = (state) => {
+    return {
+        data: state
+    }
+}
+export default connect(mapStateToProps)(ImgInput)

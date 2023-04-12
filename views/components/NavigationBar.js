@@ -1,5 +1,6 @@
-import Link from "next/link"
+// import {  NavActiveLink } from "next/link"
 import { useState, useEffect, useRef } from "react";
+import ActiveLink from "./ActiveLink";
 import style from "../sass/NavigationBar.module.sass"
 export default function NavigationBar(props) {
     return (<>
@@ -7,80 +8,80 @@ export default function NavigationBar(props) {
 
             <ul className={style.navigationBar}>
                 <li>
-                    <Link href="/">
+                    <ActiveLink href="/" activeClassName={style.active}>
                         <a>Back to Home</a>
-                    </Link>
+                    </ActiveLink>
                 </li>
                 <li>
-                    <Link href={"/" + props.admin_path}>
+                    <ActiveLink href={"/" + props.admin_path} activeClassName={style.active}>
                         <a>Admin</a>
-                    </Link>
+                    </ActiveLink>
                 </li>
                 <li>
-                    <Link href={"/" + props.admin_path + "/article"}>
+                    <ActiveLink href={"/" + props.admin_path + "/article"} activeClassName={style.active}>
                         <a >Articles</a>
-                    </Link>
+                    </ActiveLink>
                     <ul>
                         <li>
-                            <Link href={"/" + props.admin_path + "/article/add"}>
+                            <ActiveLink href={"/" + props.admin_path + "/article/add"} activeClassName={style.active}>
                                 <a >New Article</a>
-                            </Link>
+                            </ActiveLink>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <Link href={"/" + props.admin_path + "/category"}>
+                    <ActiveLink href={"/" + props.admin_path + "/category"} activeClassName={style.active}>
                         <a >Category</a>
-                    </Link>
+                    </ActiveLink>
                     <ul>
                         <li>
-                            <Link href={"/" + props.admin_path + "/category/add"}>
+                            <ActiveLink href={"/" + props.admin_path + "/category/add"} activeClassName={style.active}>
                                 <a>New Category</a>
-                            </Link>
+                            </ActiveLink>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <Link href={"/" + props.admin_path + "/user/"}>
+                    <ActiveLink href={"/" + props.admin_path + "/user"} activeClassName={style.active}>
                         <a>User</a>
-                    </Link>
+                    </ActiveLink>
                     <ul>
                         <li>
-                            <Link href={"/" + props.admin_path + "/user/add"}>
+                            <ActiveLink href={"/" + props.admin_path + "/user/add"} activeClassName={style.active}>
                                 <a>New User</a>
-                            </Link>
+                            </ActiveLink>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <Link href={"/" + props.admin_path + "/media"}>
+                    <ActiveLink href={"/" + props.admin_path + "/media"} activeClassName={style.active}>
                         <a >Media</a>
-                    </Link>
+                    </ActiveLink>
                     <ul>
                         <li>
-                            <Link href={"/" + props.admin_path + "/media/add"}>
+                            <ActiveLink href={"/" + props.admin_path + "/media/add"} activeClassName={style.active}>
                                 <a >New Media</a>
-                            </Link>
+                            </ActiveLink>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <Link href={"/" + props.admin_path + "/tag"}>
+                    <ActiveLink href={"/" + props.admin_path + "/tag"} activeClassName={style.active}>
                         <a>Tag</a>
-                    </Link>
+                    </ActiveLink>
                     <ul>
                         <li>
-                            <Link href={"/" + props.admin_path + "/tag/add"}>
+                            <ActiveLink href={"/" + props.admin_path + "/tag/add"} activeClassName={style.active}>
                                 <a >New Tag</a>
-                            </Link>
+                            </ActiveLink>
 
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <Link href={"/" + props.admin_path + "/siteinfo"}>
+                    <ActiveLink href={"/" + props.admin_path + "/siteinfo"} activeClassName={style.active}>
                         <a >Site info</a>
-                    </Link>
+                    </ActiveLink>
                 </li>
             </ul>
         </div>
